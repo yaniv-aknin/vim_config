@@ -20,6 +20,10 @@ set showtabline=2
 " highlight matching braces for 5/10 second after typing
 set showmatch
 set mat=5 " 
+" wildmenu shows possible command completion when hitting <tab>
+set wildmenu
+" ruler adds current cursor location in the status line
+set ruler
 " }}}
 
 " {{{ General bindings
