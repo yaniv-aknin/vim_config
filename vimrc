@@ -27,6 +27,10 @@ set ruler
 " }}}
 
 " {{{ General bindings
+" hitting F1 by mistake is annoying; replace with ESC
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
 " set a mapleader for alternative keyboard realestate
 let mapleader = ","
 " map ,c to enable system clipboard; ,C to disable
