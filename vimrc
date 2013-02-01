@@ -25,12 +25,7 @@ set showtabline=2
 " highlight matching braces for 5/10 second after typing
 set showmatch
 set mat=5 " 
-
-" incremental search, highlight search
-set incsearch
-set hlsearch
 " }}}
-
 
 " {{{ General bindings
 " set a mapleader for alternative keyboard realestate
@@ -57,4 +52,20 @@ imap <C-t> <ESC>:tabnew<cr>
 
 " Map <leader>e to open files in the same directory as the current file
 map <leader>e :tabnew <C-R>=expand("%:h")<cr><cr>
+" }}}
+
+" {{{ Search
+" always use perl style regex for searching
+nnoremap / /\v
+vnoremap / /\v
+" ignore case when search is lowercase, sensitise upon first uppercase char
+set ignorecase
+set smartcase
+" replacement are global unless suffixed by /g (opposite of default)
+set gdefault
+" incremental search, show matches, highlight search, dehighlight upon ,<space>
+set incsearch
+set showmatch
+set hlsearch
+nnoremap <leader><space> :nohlsearch<cr>
 " }}}
