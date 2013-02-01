@@ -7,6 +7,7 @@ let g:netrw_list_hide='^\.[^\.],\.pyc$'
 
 " ask syntastic to only highlight errors, no signs
 let syntastic_enable_signs=0
+let syntastic_highlight_lines=1
 
 " Add the virtualenv's site-packages to vim Python path
 py << EOF
