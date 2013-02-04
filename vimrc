@@ -56,8 +56,8 @@ map <leader>e :tabnew <C-R>=expand("%:h")<cr><cr>
 
 " {{{ Search
 " always use perl style regex for searching
-nnoremap / /\v
-vnoremap / /\v
+nnoremap \ /\v
+vnoremap \ /\v
 " ignore case when search is lowercase, sensitise upon first uppercase char
 set ignorecase
 set smartcase
