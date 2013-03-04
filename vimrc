@@ -68,6 +68,7 @@ set incsearch
 set showmatch
 set hlsearch
 nnoremap <leader><space> :nohlsearch<cr>
+map <leader>u /[^ -~\s\t]<CR>
 " }}}
 
 " {{{ Grow up already
