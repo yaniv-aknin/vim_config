@@ -85,3 +85,8 @@ endfunction
 
 nmap <leader>A :call NoArrows()<CR>
 " }}}
+
+let local_config_file=$HOME."/.local.vim"
+if filereadable(local_config_file)
+    exec "source" local_config_file
+endif
