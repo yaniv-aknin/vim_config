@@ -86,7 +86,15 @@ endfunction
 nmap <leader>A :call NoArrows()<CR>
 " }}}
 
+" support a site-local config file
 let local_config_file=$HOME."/.local.vim"
 if filereadable(local_config_file)
     exec "source" local_config_file
 endif
+
+" source non-pathogen addons FIXME: learn vim syntax and avoid kludges...
+let python_location=$HOME."/.vim/nonpathogen/python_location.vim"
+exec "source" python_location
+
+" make it easy to toggle paste mode
+set pastetoggle=<F2>
